@@ -2,7 +2,11 @@
 
 # ADS-Based MMIC LNA Design Flow
 
-This repository captures **my personal, hands-on workflow** for designing a monolithic microwave integrated circuit (MMIC) low-noise amplifier (LNA) in Keysight ADS. All steps and insights come directly from my own experience exploring ADS’s simulation, optimization, and yield-analysis features.
+This repository captures **my personal, hands-on experience** for designing two RF blocks:
+a (MMIC) low-noise ampfier (LNA) 
+a Low-Pass Filter (LPF) in Keysight ADS. 
+
+All steps and insights come directly from my own experience exploring ADS’s simulation, optimization, and yield-analysis features.
 
 ## Table of Contents
 
@@ -54,8 +58,6 @@ Based on initial trials, I settled on a three-stage matching network:
 2. Interstage network (gain flatness)  
 3. Output match (load conjugation)  
 
-I drew each block by hand in draw.io to avoid licensing issues.
-
 ### 3. Initial Simulation & Nominal Results
 
 My first sweep over 7–9 GHz exposed unexpected bumps in NF. I exported CSV results from ADS and plotted them to compare iterations.
@@ -81,15 +83,13 @@ Armed with DOE insights, I redesigned the output matching stub and interstage co
 
 After re-tuning, my Monte Carlo results rose to over 80 %—a milestone that confirmed the value of an iterative, data-driven approach.
 
----
 
 ## Key Takeaways
 
 - **Hands-on iteration:** My workflow evolved through trial, error, and DOE insights.  
 - **Personal scripts & sketches:** I version-controlled every data export and block diagram I drew.  
 - **Data-driven redesign:** Let yield and sensitivity results guide topology changes, not guesswork.
-
----
+- **Possible AI Applications for choosing topologies**
 
 ## References & Further Reading
 
