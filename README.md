@@ -90,9 +90,3 @@ After re-tuning, my Monte Carlo results rose to over 80 %—a milestone that con
 - **Personal scripts & sketches:** I version-controlled every data export and block diagram I drew.  
 - **Data-driven redesign:** Let yield and sensitivity results guide topology changes, not guesswork.
 - **Possible AI Applications for choosing topologies**
-
-## References & Further Reading
-
-- ADS User Guide (via your ADS installation)  
-- Pozar, D. M., *Microwave Engineering* (matching networks)  
-- Montgomery, D. C., *Design and Analysis of Experiments* (DOE fundamentals)  
